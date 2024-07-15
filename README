@@ -1,0 +1,62 @@
+Everything worked.
+
+
+1- I have implemented the two algorithms, mergeSort and insertionSort. Both of them works as expected and do the sorting with expected time complexities. 
+All the comparisons and copying is done using the metrics as required.
+
+
+2- after analysing the code and following the each comparisons and copyings iterations, the equations in terms of n for the number of moves, swaps and compares are presented as follows
+#Note: there were no swaps used in the insertionSort nor the mergeSort; only comparisons and copying.
+
+
+A) insertionSort:
+
+Using mathmatical induction and solving for the worst case complexity equation ---->> a n^2 + b n + c
+                                                best case complexity equation ----->> b n + c
+
+* Compares: 
+worstcase: 1/2 n^2 - 1/2 n
+Bestcase: n-1
+Avergecase: 1/4 n^2 + 1/4 n - 1/2
+
+O(n^2)
+Ω(n)
+θ(n^2)
+
+- - - - - - - - - - -
+
+* Moves(Copying): 
+worstcase: 1/2 n^2 + 3/2 n - 2
+Bestcase: 2n-2
+Avergecase: 1/4 n^2 + 7/4 n - 2
+
+O(n^2)
+Ω(n)
+θ(n^2)
+
+-----------------------------------------------------------------------
+
+B) mergeSort:
+
+Using mathmatical induction and solving for the complexity equation ---->> a (n+b) log(n) + c n + d log(n) + f
+* Compares: 
+worstcase:  2 n log2(n) 
+Bestcase:   2 n log2(n)
+Avergecase: 2 n log2(n)
+
+O(n log2(n))
+Ω(n log2(n))
+θ(n log2(n))
+
+- - - - - - - - - - -
+
+* Moves(Copying): 
+worstcase: 1/2 n log2(n)
+Bestcase: 1/2 n log2(n)
+Avergecase: 1/2 n log2(n)
+
+O(n log2(n))
+Ω(n log2(n))
+θ(n log2(n))
+
+
